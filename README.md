@@ -11,7 +11,7 @@
 + 基于[GitHub Actions](https://github.com/features/actions)，公开仓库使用零成本
 + 可用[pushplus](https://www.pushplus.plus/)推送签到消息到公众号（支持使用自己的公众号推送）
   ![公众号推送](./imgs/pushplus_show1.jpg)
-  ![点开详情](C:\Users\86158\Desktop\Github\pediy-CheckIn\imgs\pushplus_show2.jpg)
+  ![点开详情](./imgs/pushplus_show2.jpg)
 
 ## 使用方法
 ### 获取看雪COOKIE
