@@ -11,7 +11,7 @@
 + 基于[GitHub Actions](https://github.com/features/actions)，公开仓库使用零成本
 + 可用[pushplus](https://www.pushplus.plus/)推送签到消息到公众号（支持使用自己的公众号推送）
   ![公众号推送](./imgs/pushplus_show1.jpg)
-  ![点开详情](C:\Users\86158\Desktop\Github\pediy-CheckIn\imgs\pushplus_show2.jpg)
+  ![点开详情](./imgs/pushplus_show2.jpg)
 
 ## 使用方法
 ### 获取看雪COOKIE
@@ -63,3 +63,10 @@
 
 扫描二维码关注pushplus公众号，签到消息会以推送方式呈现，目前亲测没有广告，偶尔有服务更新、维护等消息。
 2022-04-13，服务更新了支持绑定团队认证的公众号进行推送的功能。
+
+## 作者
+[@BowenYoung](https://github.com/BowenYoung)
+
+## 支持
+觉得本项目对你有所帮助，可以点击右上角star✨✨✨
+
