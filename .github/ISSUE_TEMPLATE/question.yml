@@ -1,0 +1,25 @@
+name: 问题/帮助
+description: 提问问题。
+title: "[question/help]: "
+labels: ["help wanted"]
+assignees:
+  - BowenYoung
+body:
+  - type: markdown
+    attributes:
+      value: "## 在你开始之前..."
+  - type: markdown
+    attributes:
+      value: |
+        提问前请确保你已经完成以下工作
+
+        - 仔细阅读 [使用说明](https://github.com/BowenYoung/pediy-CheckIn)
+        - 查阅他人提出的 [issue](https://github.com/BowenYoung/pediy-CheckIn/issues?q=is%3Aissue) 
+
+  - type: textarea
+    id: question
+    attributes:
+      label: 问题
+      description: 对问题的清晰描述。
+    validations:
+      required: true

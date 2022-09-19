@@ -1,0 +1,37 @@
+name: 错误报告
+description: 创建一个报告来帮助我们改进。
+title: "[Bug]: "
+labels: ["bug"]
+assignees:
+  - BowenYoung
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您花时间填写此错误报告！
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: 当前行为
+      description: 告诉我们实际发生了什么。
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: 预期行为
+      description: 告诉我们应该发生什么。
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 工作流日志
+      description: |
+        1. 点击仓库的 Actions
+        2. 点击具体工作流
+        3. 点击 build
+        4. 点击右上角选项，选择 "View raw logs"
+        5. 复制logs，去除账号信息，粘贴到下方文本域
+    validations:
+      required: true

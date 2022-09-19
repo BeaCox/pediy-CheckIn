@@ -1,0 +1,35 @@
+name: PEDIY-CheckIn
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths-ignore: 
+      - 'README.md'
+      - 'imgs/**'
+  schedule:
+    - cron: 30 0 * * *
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+      - name: install dependency(dependencies)
+        run: npm install
+      - name: CheckIn
+        run: node main.js
+        env:
+          PUSHPLUS: ${{ secrets.PUSHPLUS }}
+          COOKIE: ${{ secrets.COOKIE }}
+      - name: keep alive
+        uses: gautamkrishnar/keepalive-workflow@master # keep workflows from being suspended when no commit for a long time
+      - name: Delete workflow runs
+        uses: Mattraks/delete-workflow-runs@v2 # delete some workflows
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: 0
+          keep_minimum_runs: 9
