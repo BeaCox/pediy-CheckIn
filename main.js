@@ -46,25 +46,16 @@ const checkIn = async () => {
         }
         console.log(error.config);
     })
-    // .then(function (response) {
-    //     if(response.data.code == 0){
-    //         console.log('checkin成功');
-    //     }
-    //     else{
-    //         console.log(response.data.message);
-    //     }
-    // });
-
 };
 
-const sendMsg = async (msg) => {
+const sendMsg = async (msg, code) => {
     var token = PUSHPLUS;
     if (!token) {
         return;
     }
-    // if (parseInt(msg)){
-    //     msg = `签到成功，获得${msg}雪币`;
-    // }
+    if (code == 0){
+        msg = `签到成功，获得${msg}雪币`;
+    }
     const data = {
         token,
         title: '看雪论坛签到',
@@ -111,7 +102,7 @@ const start = async () => {
                 console.warn('不存在 PUSHPLUS ，请重新检查');
             }
             else {
-                const pushResult = (await sendMsg(message))?.data?.msg;
+                const pushResult = (await sendMsg(message, code))?.data?.msg;
                 console.log('PUSHPLUS 推送结果', pushResult);
             }
         }
