@@ -54,7 +54,7 @@ const sendMsg = async (msg, code) => {
         return;
     }
     if (code == 0){
-        msg = `签到成功，获得${msg}雪币`;
+        msg = `🎉🎉🎉签到成功，获得${msg}雪币`;
     }
     const data = {
         token,
