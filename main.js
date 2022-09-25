@@ -56,6 +56,9 @@ const sendMsg = async (msg, code) => {
     if (code == 0){
         msg = `🎉🎉🎉签到成功，获得${msg}雪币`;
     }
+    else{
+        msg = `📢您已签到，无需重复签到`;
+    }
     const data = {
         token,
         title: '看雪论坛签到',
