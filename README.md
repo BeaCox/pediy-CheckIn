@@ -65,7 +65,7 @@
 2022-04-13，服务更新了支持绑定团队认证的公众号进行推送的功能。
 
 ## 作者
-[@BowenYoung](https://github.com/BowenYoung)
+[@BeaCox](https://github.com/BeaCox)
 
 ## 支持
 觉得本项目对你有所帮助，可以点击右上角star✨✨✨
