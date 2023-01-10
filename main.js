@@ -21,7 +21,7 @@ const checkCOOKIE = async () => {
 const checkIn = async () => {
     const options = {
         method: 'post',
-        url: `https://bbs.pediy.com/user-signin.htm`,
+        url: `https://bbs.kanxue.com/user-signin.htm`,
         headers: {
             'User-Agent': 'HD1910(Android/7.1.2) (pediy.UNICFBC0DD/1.0.5) Weex/0.26.0 720x1280',
             'Cookie': COOKIE,
