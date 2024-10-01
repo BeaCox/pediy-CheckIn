@@ -3,7 +3,7 @@ const PUSHPLUS = process.env.PUSHPLUS;
 const COOKIE = process.env.COOKIE;
 
 const checkCOOKIE = async () => {
-    if (!COOKIE.length) {
+    if (!COOKIE || !COOKIE.length) {
         console.error('不存在 COOKIE ，请重新检查');
         return false;
     }
@@ -101,7 +101,7 @@ const start = async () => {
         if (code == 0 || message == '您今日已签到成功') {
             if (code == 0) console.log('checkin成功');
             else console.log(message);
-            if (!PUSHPLUS.length) {
+            if (!PUSHPLUS || !PUSHPLUS.length){
                 console.warn('不存在 PUSHPLUS ，请重新检查');
             }
             else {
