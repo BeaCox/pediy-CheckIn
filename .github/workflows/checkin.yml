@@ -24,8 +24,8 @@ jobs:
         env:
           PUSHPLUS: ${{ secrets.PUSHPLUS }}
           COOKIE: ${{ secrets.COOKIE }}
-      - name: keep alive
-        uses: gautamkrishnar/keepalive-workflow@master # keep workflows from being suspended when no commit for a long time
+      # - name: keep alive
+      #   uses: gautamkrishnar/keepalive-workflow@master # this repository has been disabled
       - name: Delete workflow runs
         uses: Mattraks/delete-workflow-runs@v2 # delete some workflows
         with:
